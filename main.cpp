@@ -16,9 +16,12 @@ bool trim(string &s)
 		return false;
 	}
 
-	if ((last = s.find_last_of(new char('u'), string::npos, s.length() - 1 - first)) == string::npos) {
+	char *u = new char('u');
+	if ((last = s.find_last_of(u, string::npos, s.length() - 1 - first)) == string::npos) {
+		delete u;
 		return false;
 	}
+	delete u;
 
 	s = s.substr(first, last - first + 1);
 
