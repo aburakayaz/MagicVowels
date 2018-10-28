@@ -1,3 +1,5 @@
 language: cpp
+env:
+  - APP_NAME=magicvowels
 script: 
-  - make
+  - g++ -std=c++11 -o $APP_NAME main.cpp
