@@ -6,27 +6,36 @@ We define a magical subsequence of s to be a sequence of letters derived from s 
  
 Write a function to find length of longest magical subsequence with parameter string s.
  
-Input Format
+## Input Format
+
 String s composed of English vowels (i.e., a, e, i, o, and u).
  
-Output Format
+## Output Format
+
 Count denoting the length of the longest magical subsequence in s.
  
-Sample Input 1
+### Sample Input 1
+
 aeiaaioooaauuaeiou
  
-Sample Output 1 : **_10_**
+### Sample Output 1 
+
+**_10_**
  
-Explanation 1
+### Explanation 1
+
 In the table below, the component characters of the longest magical subsequence are **bold**:
 
 > **aei**aa**iooo**aa**uu**aeio**u**
 
- 
-Sample Input 2
+### Sample Input 2
+
 aeiaaioooaa
  
-Sample Output 2 : **_0_**
+### Sample Output 2
+
+**_0_**
  
-Explanation 2
+### Explanation 2
+
 String s does not contain the letter u, so it is not possible to construct a magical subsequence.
